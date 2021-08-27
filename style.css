@@ -1,14 +1,11 @@
-section
+div
 {
     position: relative;
     display: flex;
     flex-direction: column;
+    min-height: 800px;
+    background: url("loading.png") no-repeat center center;
+    align-content: center;
     align-items: center;
-}
-img
-{
-    width: 15%;
-    position: relative;
-    margin-top: 100vw;
-    margin-bottom: auto;
+    padding: 40vw 20vw;
 }
