@@ -1,11 +1,15 @@
-div
+img
+{
+    width: 15%;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    transform: translate(-50%, -175%);
+}
+
+div 
 {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 800px;
-    background: url("loading.png") no-repeat center center;
-    align-content: center;
-    align-items: center;
-    padding: 20vw 20vw;
+    height: 1000px;
 }
