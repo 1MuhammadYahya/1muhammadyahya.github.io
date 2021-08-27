@@ -1,8 +1,14 @@
-.loadingid
+section
 {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50%;
+}
+img
+{
+    width: 15%;
+    position: relative;
+    margin-top: 100%;
+    margin-bottom: auto;
 }
