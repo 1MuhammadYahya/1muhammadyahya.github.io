@@ -1,8 +1,17 @@
 /*Initial loading stage*/
 var remove_Property = function() 
 {
-    element = document.styleSheets[0].cssRules[0].style;
-    element.removeProperty('background-image');
+    element = document.getElementById("loader");
+    element.remove();
 }
 
-window.onload = remove_Property;
+
+setTimeout(remove_Property, 1500);
+
+function run()
+{
+    element = document.getElementById("mainPage");
+    element.style.display = "flex";
+}
+
+setTimeout(run, 1500);

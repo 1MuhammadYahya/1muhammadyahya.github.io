@@ -15,9 +15,8 @@
     transform-origin: center;
 }
 
-html, body
+#mainPage
 {
-    margin: 0px;
-    overflow: hidden;
-    height: 100%;
+    display: none;
+    flex-direction: column;
 }
