@@ -5,8 +5,4 @@ var remove_Property = function()
     element.removeProperty('background-image');
 }
 
-function runfunction(){
-    setTimeout(remove_Property, 1500);
-}
-
-runfunction();
+window.onload = remove_Property;
