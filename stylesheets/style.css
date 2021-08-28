@@ -15,8 +15,50 @@
     transform-origin: center;
 }
 
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
 #mainPage
 {
     display: none;
     flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+#english
+{
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: rgb(142, 142, 142);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 8px;
+    left: -8px;
+}
+
+#wording
+{
+    display: block;
+    background-image: url("../images/wwording.png");
+    background-repeat: no-repeat;
+    background-size: 440px 441px;
+    background-position: 0px -129px;
+    margin: 22px auto 12px;
+    width: 175px;
+    height: 65px;
+    overflow: hidden;
+    position: relative;
+    top: 16px;
+    left: -8px;
 }
