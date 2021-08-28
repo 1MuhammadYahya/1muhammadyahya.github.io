@@ -21,6 +21,7 @@ body
     flex-direction: column;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
+    background: #FAFAFA;
 }
 
 #mainPage
@@ -47,6 +48,16 @@ body
     left: -8px;
 }
 
+.main
+{
+    border: rgba(142, 142, 142, .2);
+    border-style: solid;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-top: 5vh;
+    background: #FFFFFF
+}
+
 #wording
 {
     display: block;
@@ -60,53 +71,50 @@ body
     overflow: hidden;
     position: relative;
     top: 16px;
-    left: -8px;
 }
 
-#firstLabel
+.input
 {
+    width: 35vw;
+    line-height: 35px;
     display: flex;
-    height: 36px;
-    -webkit-box-flex: 1;
-    flex: 1 0 0;
-    padding: 0;
     position: relative;
-    margin: 0;
-    min-width: 0;
-    vertical-align: baseline;
-    border: 0;
-    font: inherit;
-    cursor: default;
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    outline-color: rgba(142, 142, 142, .2);
+    padding-left: 15px;
 }
 
-#username
+input
 {
-    background: #fafafa;
-    border: 0;
-    -webkit-box-flex: 1;
-    flex: 1 0 auto;
-    margin: 0;
-    outline: 0;
-    overflow: hidden;
-    padding: 9px 0px 7px 8px;
-    text-overflow: ellipsis;
-    -webkit-appearance: none;
-    margin-left: 65px;
-    margin-right: 65px;
+    border-color: rgba(142, 142, 142, .1);
+    border-width: 0.5px;
+    background-color: #FAFAFA;
 }
 
-#usernamePass
+.inputData label
 {
-    color: rgb(142, 142, 142);
-    font-size: 12px;
-    height: 36px;
-    left: 75px;
-    line-height: 36px;
-    overflow: hidden;
-    pointer-events: none;
     position: absolute;
-    right: 0;
-    text-overflow: ellipsis;
-    transform-origin: left;
+    top: 35.7vh;
+    font-size: 10px;
+    color: rgba(142, 142, 142);
+    left: 220px;
+    pointer-events: none;
+    transition: .15s ease-in;
+}
+
+.inputData input:valid ~ label
+{
+    transform: translateY(-10px);
+    font-size: 8px;
+}
+
+.password
+{
+    margin-top: 7vh;
+}
+.inpPass
+{
+    
 }
