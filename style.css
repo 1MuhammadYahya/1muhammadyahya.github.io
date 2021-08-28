@@ -9,8 +9,15 @@
     background-position-x: center;
     background-position-y: center;
     background-size: 50%;
-    height: 100vh;
+    height: 90vh;
     width: 100px;
     margin: auto;
     transform-origin: center;
+}
+
+html, body
+{
+    margin: 0px;
+    overflow: hidden;
+    height: 100%;
 }
