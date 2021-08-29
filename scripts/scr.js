@@ -19,10 +19,14 @@ setTimeout(run, 1500);
 function showPass()
 {
     var passinputfield = document.getElementById("passwordInput");
+    var passBut = document.getElementById("passButton");
     if (passinputfield.type == "password")
     {
         passinputfield.type = "text";
+        passBut.innerText = "Hide";
+
     } else {
         passinputfield.type = "password";
+        passBut.innerText = "Show"  
     }
 }
