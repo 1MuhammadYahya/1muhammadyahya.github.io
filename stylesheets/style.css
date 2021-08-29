@@ -1,5 +1,4 @@
-#loader 
-{
+#loader {
     display: flex;
     position: relative;
     flex-direction: column;
@@ -15,25 +14,22 @@
     transform-origin: center;
 }
 
-body
-{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
-    background: #FAFAFA;
+    background: #FFFFFF;
 }
 
-#mainPage
-{
+#mainPage {
     display: none;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
 }
 
-#english
-{
+#english {
     font-weight: 400;
     font-size: 12px;
     margin: 0;
@@ -48,73 +44,91 @@ body
     left: -8px;
 }
 
-.main
-{
-    border: rgba(142, 142, 142, .2);
-    border-style: solid;
-    margin-left: 25vw;
-    margin-right: 25vw;
+.main {
+    min-width: 350px;
     margin-top: 5vh;
     background: #FFFFFF
+
 }
 
-#wording
-{
+#wording {
     display: block;
     background-image: url("../images/wwording.png");
     background-repeat: no-repeat;
     background-size: 440px 441px;
     background-position: 0px -129px;
-    margin: 22px auto 12px;
     width: 175px;
     height: 65px;
     overflow: hidden;
     position: relative;
-    top: 16px;
-}
-
-.input
-{
-    width: 35vw;
-    line-height: 35px;
-    display: flex;
-    position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10vh;
-    outline-color: rgba(142, 142, 142, .2);
-    padding-left: 15px;
+    margin-top: 1%;
+}
+
+.loginWithFaceBook
+{
+    border-style: solid;
+    border-color: #0095F6;
+    background-color: #0095f6;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    min-width: 250px;
+    max-width: 300px;
+    width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+    border-radius: 5px;
+    top: 10%;
+}
+
+.wrapper {
+    margin-top: 30%;
 }
 
 input
 {
-    border-color: rgba(142, 142, 142, .1);
-    border-width: 0.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
     background-color: #FAFAFA;
+    border: rgba(142, 142, 142, .2);
+    border-style: solid;
+    border-radius: 5px;
+    border-width: .5px;
+    line-height: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    max-width: 300px;
+    min-width: 250px;
+    padding-left: 12.5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    outline: none;
 }
 
-.inputData label
+.input-Data input:valid~label
 {
-    position: absolute;
-    top: 35.7vh;
-    font-size: 10px;
-    color: rgba(142, 142, 142);
-    left: 220px;
-    pointer-events: none;
-    transition: .15s ease-in;
-}
-
-.inputData input:valid ~ label
-{
-    transform: translateY(-10px);
     font-size: 8px;
+    bottom: 42.5px;
 }
 
-.password
+label
 {
-    margin-top: 7vh;
-}
-.inpPass
-{
-    
+    color: rgb(142, 142, 142);
+    font-size: 10px;
+    margin-left: 22.5%;
+    position: relative;
+    bottom: 32.5px;
+    transition: .15s ease-in;
+    pointer-events: none;
 }
