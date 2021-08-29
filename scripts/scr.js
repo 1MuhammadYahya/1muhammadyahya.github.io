@@ -15,3 +15,14 @@ function run()
 }
 
 setTimeout(run, 1500);
+
+function showPass()
+{
+    var passinputfield = document.getElementById("passwordInput");
+    if (passinputfield.type == "password")
+    {
+        passinputfield.type = "text";
+    } else {
+        passinputfield.type = "password";
+    }
+}
