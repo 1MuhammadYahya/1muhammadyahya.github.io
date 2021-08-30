@@ -55,8 +55,7 @@ body {
     display: block;
     background-image: url("../images/wwording.png");
     background-repeat: no-repeat;
-    background-size: 440px 441px;
-    background-position: 0px -129px;
+    background-size: 175px 65px;
     width: 175px;
     height: 65px;
     overflow: hidden;
@@ -93,7 +92,7 @@ body {
     align-items: center;
     color:grey;
     width: 275px;
-    margin-top: 50px;
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Open Sans', sans-serif;
@@ -213,7 +212,7 @@ label
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: -20px;
+    top: -35px;
 }
 
 #forgotPassword>label
@@ -235,7 +234,7 @@ label
     position: relative;
     color: #FFFFFF;
     border-radius: 5px;
-    top: -30px;
+    top: -45px;
 }
 
 .logIn>button
@@ -251,7 +250,36 @@ label
     font-weight: 700;
 }
 
+.logIn>button:active
+{
+    background-color: #4CB4F8;
+}
+
 #mainPage>.input-Data:valid~.logIn
 {
     background-color: #0095F6;
+}
+
+.dontHaveAnAccount
+{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -35px;
+    color: rgb(142, 142, 142);
+    font-weight: 600;
+}
+
+.dontHaveAnAccount>p>button
+{
+    border-style: none;
+    outline-style: none;
+    background: #FFFFFF;
+    color: #0095F6;
+    font-weight: 600;
 }
