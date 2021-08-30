@@ -97,6 +97,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-size: 12px;
   }
   
@@ -132,6 +133,7 @@ input
     width: 250px;
     padding-left: 12.5px;
     font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 12px;
     outline: none;
 }
@@ -142,10 +144,18 @@ input
     top: -25px;
 }
 
-.input-Data input:valid~label
+.input-Data input:valid~div>label
 {
-    font-size: 8px;
-    bottom: 42.5px;
+    font-size: 9px;
+    bottom: 45px;
+}
+
+.labelWrapper
+{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
 }
 
 label
@@ -155,28 +165,87 @@ label
     width: 300px;
     position: relative;
     bottom: 32.5px;
-    left: 15vw;
     transition: .15s ease-in;
     pointer-events: none;
+    padding-left: 5.5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
 }
 
-.input-Data button
+#lowerInput
+{
+    position: relative;
+    top: -40px;
+}
+
+.input-Data div>button
 {
     display: none;
 }
 
-.input-Data input:valid~button
+.input-Data input:valid~div>button
 {
     display: flex;
     font-size: 12px;
     outline: none;
-    background-color: #FFFFFF;
+    background-color: #FAFAFA;
     border-style: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     position: relative;
     flex-direction: column;
-    margin-left: 70%;
-    margin-right: 30%;
+    left: 200px;
     transform: translateY(-52px);
+}
+
+.showpaas
+{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#forgotPassword
+{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -20px;
+}
+
+#forgotPassword>label
+{
+    position: relative;
+    color: #0F9BF9;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: 10px;
+    left: 150px;
+}
+
+.logIn
+{
+    background-color: #B2DFFC;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    color: #FFFFFF;
+    border-radius: 5px;
+    top: -15px;
+}
+
+.logIn>button
+{
+    background-color: transparent;
+    outline: none;
+    border-style: none;
+    width: 250px;
+    line-height: 25px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-style: 'Open Sans', sans-serif;
+    font-weight: 600;
 }

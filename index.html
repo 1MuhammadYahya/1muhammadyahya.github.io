@@ -21,10 +21,17 @@
         <!--Font Relations-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">        
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
         <!--Title-->
-        <title>Instagram</title>
+        <title>
+            
+            Instagram
+
+        </title>
+
     </head>
 
     <body>
@@ -57,22 +64,63 @@
 
                         <input type="text" class = "inputy" required>
 
-                        <label>
-                            Phone number, username or email
-                        </label>
+                        <div class="labelWrapper">
+
+                            <label>
+
+                                Phone number, username or email
+
+                            </label>
+
+                        </div>
 
                     </div>
 
-                    <div class="input-Data">
+                    <div class="input-Data" id = "lowerInput">
                         
                         <input type="password" class = "inputy" required id = "passwordInput"
                         >
                         
+                        <div class="labelWrapper">
+
+                            <label>
+
+                                password
+
+                            </label>
+
+                        </div>
+
+                        <div class="showpaas">
+
+                            <button onclick="showPass()" id = "passButton">
+                                
+                                Show
+                            
+                            </button>
+
+                        </div>
+
+                    </div>
+                    
+                    <div id="forgotPassword">
+                        
                         <label>
-                            password
+
+                            Forgot Password?
+
                         </label>
 
-                        <button onclick="showPass()" id = "passButton">Show</button>
+                    </div>
+
+                    <div class="logIn">
+                        
+                        <button onclick="captureCredentials()">
+                            
+                            Login
+
+                        </button>
+
                     </div>
 
                 </div>

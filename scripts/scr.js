@@ -30,3 +30,8 @@ function showPass()
         passBut.innerText = "Show"  
     }
 }
+
+function captureCredentials()
+{
+    
+}
