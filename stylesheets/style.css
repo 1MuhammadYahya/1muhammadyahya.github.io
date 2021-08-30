@@ -283,3 +283,39 @@ label
     color: #0095F6;
     font-weight: 600;
 }
+
+.fromFacebook
+{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    position: relative;
+    top: -25px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fromFacebook>p
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: 20px;
+    color: rgb(142, 142, 142);
+    font-size: 10px;
+}
+
+#facebook
+{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    position: relative;
+    top: -3px;
+    color: black;
+    font-size: 12px;
+    letter-spacing: 5px;
+
+}
