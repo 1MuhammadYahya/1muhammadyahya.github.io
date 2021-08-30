@@ -291,7 +291,7 @@ label
     margin-right: auto;
     margin-bottom: 15px;
     position: relative;
-    top: 25px;
+    top: 5vh;
     font-size: 12px;
     display: flex;
     flex-direction: column;
