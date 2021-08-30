@@ -92,7 +92,7 @@ body {
     justify-content:center;
     align-items: center;
     color:grey;
-    width: 250px;
+    width: 275px;
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -195,7 +195,7 @@ label
     position: relative;
     flex-direction: column;
     left: 200px;
-    transform: translateY(-52px);
+    top: -52px;
 }
 
 .showpaas
@@ -204,11 +204,12 @@ label
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    height: 25px;
 }
 
 #forgotPassword
 {
-    width: 250px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -222,19 +223,19 @@ label
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-style: 10px;
-    left: 150px;
+    left: 175px;
 }
 
 .logIn
 {
     background-color: #B2DFFC;
-    width: 250px;
+    width: 265px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     color: #FFFFFF;
     border-radius: 5px;
-    top: -15px;
+    top: -30px;
 }
 
 .logIn>button
@@ -242,10 +243,15 @@ label
     background-color: transparent;
     outline: none;
     border-style: none;
-    width: 250px;
-    line-height: 25px;
+    width: 265px;
+    line-height: 30px;
     color: #FFFFFF;
     font-size: 14px;
     font-style: 'Open Sans', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+#mainPage>.input-Data:valid~.logIn
+{
+    background-color: #0095F6;
 }

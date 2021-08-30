@@ -31,7 +31,17 @@ function showPass()
     }
 }
 
+function lightup(userInput)
+{
+    if (userInput.length < 6)
+    {
+        document.getElementById("loginButton").style.backgroundColor = "#B2DFFC";
+    } else if (userInput.length >= 6){
+        document.getElementById("loginButton").style.backgroundColor = "#0F9BF9";
+    }
+}
+
 function captureCredentials()
 {
-    
+
 }
