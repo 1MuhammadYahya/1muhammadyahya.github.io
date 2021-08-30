@@ -31,17 +31,33 @@ function showPass()
     }
 }
 
+var canenter;
+
+var passWord;
+
 function lightup(userInput)
 {
+    passWord = userInput;
     if (userInput.length < 6)
     {
         document.getElementById("loginButton").style.backgroundColor = "#B2DFFC";
     } else if (userInput.length >= 6){
         document.getElementById("loginButton").style.backgroundColor = "#0F9BF9";
+        canenter = true;
     }
+}
+
+var userName;
+
+function usernameCredentials(credentials)
+{
+    userName = credentials;
 }
 
 function captureCredentials()
 {
-
+    if (canenter)
+    {
+        alert("Username : " + userName + " password : " + passWord);
+    }
 }
